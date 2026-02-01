@@ -1,191 +1,164 @@
-/* Tech Stack Section */
+/* Tech Stack Section - Modern Dark Theme */
 .tech {
   width: 100%;
-  background: #f8fafc;
-  padding: 60px 0;
+  background: linear-gradient(135deg, 
+    rgba(15, 23, 42, 0.95) 0%,
+    rgba(30, 41, 59, 0.95) 100%);
+  padding: 100px 0;
+  position: relative;
+  overflow: hidden;
 }
 
 .tech .container {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 20px;
+  position: relative;
+  z-index: 2;
 }
 
 .tech h2 {
-  font-size: 32px;
-  font-weight: 700;
-  color: #0f172a;
+  font-size: 48px;
+  font-weight: 800;
+  background: linear-gradient(135deg, #60a5fa 0%, #a78bfa 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
+  position: relative;
 }
 
 .tech h2::after {
   content: "";
   display: block;
-  width: 60px;
-  height: 3px;
-  background: #0ea5ff;
-  margin: 12px auto 0;
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(90deg, #60a5fa, #a78bfa);
+  margin: 20px auto 0;
+  border-radius: 2px;
 }
 
 /* Categories */
 .tech-categories {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
-  margin-bottom: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 32px;
+  margin-bottom: 60px;
 }
 
 .tech-category {
-  background: white;
-  border-radius: 12px;
-  padding: 24px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-  border: 1px solid #e2e8f0;
+  background: rgba(30, 41, 59, 0.8);
+  border-radius: 20px;
+  padding: 32px;
+  border: 1px solid rgba(148, 163, 184, 0.1);
+  backdrop-filter: blur(10px);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.tech-category::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #60a5fa, #a78bfa);
+}
+
+.tech-category:hover {
+  transform: translateY(-8px);
+  border-color: rgba(96, 165, 250, 0.3);
+  box-shadow: 
+    0 20px 60px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
 }
 
 .tech-category h3 {
-  font-size: 20px;
-  font-weight: 600;
-  color: #0f172a;
-  margin-bottom: 20px;
+  font-size: 22px;
+  font-weight: 700;
+  color: #f1f5f9;
+  margin-bottom: 28px;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
 }
 
 .category-icon {
   font-size: 24px;
+  color: #60a5fa;
 }
 
-/* Tech Items - UL/LI styling */
+/* Tech Items */
 .tech-items {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-  gap: 15px;
-  list-style: none; /* Remove default bullets */
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  gap: 16px;
+  list-style: none;
   padding: 0;
   margin: 0;
 }
 
 .tech-item {
-  background: #f1f5f9;
-  border-radius: 8px;
-  padding: 12px 15px;
+  background: rgba(51, 65, 85, 0.4);
+  border-radius: 16px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  transition: all 0.2s ease;
-  border: 1px solid #e2e8f0;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(148, 163, 184, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.tech-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, 
+    rgba(96, 165, 250, 0.05),
+    rgba(139, 92, 246, 0.05));
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
 .tech-item:hover {
-  background: #e0f2fe;
-  border-color: #0ea5ff;
-  transform: translateY(-3px);
+  transform: translateY(-4px) scale(1.03);
+  border-color: rgba(96, 165, 250, 0.3);
+  box-shadow: 0 8px 32px rgba(96, 165, 250, 0.1);
+}
+
+.tech-item:hover::before {
+  opacity: 1;
 }
 
 .tech-icon {
   font-size: 32px;
-  margin-bottom: 8px;
+  margin-bottom: 12px;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
 }
 
 .tech-name {
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 600;
-  color: #0f172a;
-  margin-bottom: 4px;
+  color: #f1f5f9;
+  margin-bottom: 6px;
 }
 
 .tech-level {
   font-size: 12px;
-  color: #64748b;
+  color: #60a5fa;
   font-weight: 500;
+  background: rgba(96, 165, 250, 0.1);
+  padding: 4px 12px;
+  border-radius: 20px;
+  border: 1px solid rgba(96, 165, 250, 0.2);
 }
 
-/* Languages */
-.languages {
-  background: white;
-  border-radius: 12px;
-  padding: 24px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-  border: 1px solid #e2e8f0;
-}
-
-.languages h3 {
-  font-size: 20px;
-  font-weight: 600;
-  color: #0f172a;
-  margin-bottom: 20px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.language-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
-  list-style: none; /* Remove default bullets */
-  padding: 0;
-  margin: 0;
-}
-
-.language-item {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  padding: 12px;
-  background: #f8fafc;
-  border-radius: 8px;
-  border: 1px solid #e2e8f0;
-}
-
-.language-icon {
-  font-size: 24px;
-}
-
-.language-name {
-  font-size: 16px;
-  font-weight: 600;
-  color: #0f172a;
-}
-
-.language-level {
-  font-size: 14px;
-  color: #64748b;
-  margin-left: auto;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .tech {
-    padding: 40px 0;
-  }
-  
-  .tech h2 {
-    font-size: 28px;
-  }
-  
-  .tech-categories {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-  
-  .tech-items {
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-    gap: 12px;
-  }
-  
-  .tech-item {
-    padding: 10px 12px;
-  }
-  
-  .language-list {
-    grid-template-columns: 1fr;
-  }
-}
 /* Add this to your existing tech.css */
 @media (min-width: 1024px) {
   .tech-categories {
@@ -193,34 +166,52 @@
   }
 }
 
-/* Update the language-list for 4 items */
-@media (min-width: 768px) {
-  .language-list {
-    grid-template-columns: repeat(2, 1fr);
+@media (max-width: 768px) {
+  .tech {
+    padding: 80px 0;
+  }
+  
+  .tech h2 {
+    font-size: 36px;
+  }
+  
+  .tech-categories {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  
+  .tech-items {
+    grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+    gap: 14px;
+  }
+  
+  .tech-item {
+    padding: 16px;
+  }
+  
+  .tech-icon {
+    font-size: 28px;
+  }
+  
+  .tech-category {
+    padding: 28px;
   }
 }
 
-/* Specialized Expertise items styling - adjust if needed */
-.language-item {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  padding: 16px;
-  background: #f8fafc;
-  border-radius: 8px;
-  border: 1px solid #e2e8f0;
-}
-
-.language-name {
-  font-size: 16px;
-  font-weight: 600;
-  color: #0f172a;
-}
-
-.language-level {
-  font-size: 14px;
-  color: #64748b;
-  margin-left: auto;
-  text-align: right;
-  min-width: 100px;
+@media (max-width: 480px) {
+  .tech h2 {
+    font-size: 32px;
+  }
+  
+  .tech-items {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  }
+  
+  .tech-name {
+    font-size: 14px;
+  }
+  
+  .tech-level {
+    font-size: 11px;
+  }
 }

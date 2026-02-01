@@ -6,6 +6,7 @@ import About from './sections/About.jsx';
 import Hero from './sections/Hero.jsx';
 import Projects from './sections/Projects.jsx';
 import Technologies from './sections/Technologies.jsx';
+import Contact from './sections/Contact.jsx';
 import './styles/global.css';
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
       <About />
       <Technologies />
       <Projects />
-      <Footer />
+    <Contact />
+      {/* <Footer /> */}
     </>
   )
 }

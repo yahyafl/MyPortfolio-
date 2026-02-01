@@ -1,5 +1,6 @@
 import "../styles/Hero.css";
-import heroImg from "../assets/WIN_20250613_17_20_10_Pro.jpg";
+import heroImg from "../assets/img2.jpeg";
+import pdf from "../assets/Copy of Yehya Fleifel CV (2).pdf"
 
 export default function Hero() {
   return (
@@ -8,7 +9,7 @@ export default function Hero() {
         <div className="hero-content">
           <div className="hero-badge">
             <span className="badge-dot"></span>
-            Open for Opportunities
+            Actively Seeking Full-time Opportunities
           </div>
 
           <h1 className="hero-name">Yehya Ayman Fleifel</h1>
@@ -66,6 +67,15 @@ export default function Hero() {
                   fill="currentColor"
                 />
               </svg>
+            </a>
+
+            <a
+              href={pdf}
+              download="Yehya_Fleifel_CV.pdf"
+              className="hero-btn btn-cv"
+            >
+              <span className="btn-icon">📄</span>
+              Download CV
             </a>
 
             <a
