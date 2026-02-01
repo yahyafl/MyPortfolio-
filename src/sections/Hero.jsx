@@ -1,4 +1,4 @@
-import "../styles/Hero.css";
+import "../styles/hero.css";
 import heroImg from "../assets/img2.jpeg";
 import pdf from "../assets/Copy of Yehya Fleifel CV (2).pdf"
 
