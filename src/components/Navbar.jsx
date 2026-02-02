@@ -3,6 +3,7 @@ import "../styles/global.css";
 export default function Navbar() {
   return (
     <nav className="navbar">
+      <p className="navbar-brand">Yehya.Dev</p>
       <ul className="nav-links">
         <li>
           <a href="#hero">Home</a>

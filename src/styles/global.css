@@ -94,6 +94,22 @@ body {
   color: #60a5fa;
   background: rgba(96, 165, 250, 0.1);
 }
+.navbar-brand {
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #e5e7eb; /* light gray */
+  cursor: pointer;
+  user-select: none;
+}
+
+.navbar-brand span {
+  color: #38bdf8; /* accent color for .Dev if you want */
+}
+
+.navbar-brand:hover {
+  opacity: 0.85;
+}
 
 /* underline effect */
 .nav-links a::after {
