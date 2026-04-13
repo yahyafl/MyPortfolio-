@@ -115,7 +115,7 @@ export default function Projects() {
                 AI-Powered Stock Prediction Platform
               </h4>
               <p className="project-date">
-                <span>📅</span> Ongoing Project
+                
               </p>
             </div>
 
