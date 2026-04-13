@@ -11,7 +11,9 @@ import './styles/global.css';
 function App() {
   return (
     <>
-      <Navbar />
+      <Navbar 
+      // name=yehyaa
+      />
       <Hero />
       <About />
       <Technologies />

@@ -56,8 +56,9 @@ export default function About() {
               <div className="timeline-content">
                 <h4>Academic Foundation</h4>
                 <p>
-                  Building a solid foundation in computer science principles,
-                  algorithms, and software engineering practices.
+                  Bachelor's degree in Computer Science at Beirut Arab
+                  University — graduating May 2025. Awarded 1st place in the
+                  senior projects competition.
                 </p>
               </div>
             </div>
@@ -66,11 +67,11 @@ export default function About() {
             <div className="timeline-item">
               <div className="timeline-dot"></div>
               <div className="timeline-content">
-                <h4>Backend Development</h4>
+                <h4>AI Engineering at IDS Fintech</h4>
                 <p>
-                  Hands-on experience building scalable backend services with
-                  modern frameworks like FastAPI and Laravel, working with
-                  databases like PostgreSQL.
+                  Researched and applied RAG techniques for financial AI
+                  solutions. Built FastAPI backend services, implemented MCP
+                  servers, and deployed via Docker and cloud environments.
                 </p>
               </div>
             </div>
@@ -79,35 +80,35 @@ export default function About() {
             <div className="timeline-item">
               <div className="timeline-dot"></div>
               <div className="timeline-content">
-                <h4>AI & LLM Integration</h4>
+                <h4>Full Stack Intern — The Digital Hub UNRWA</h4>
                 <p>
-                  Specializing in AI-driven platforms and Retrieval-Augmented
-                  Generation (RAG) solutions using cutting-edge AI frameworks
-                  and tools.
+                  Engineering full-stack features with Next.js, NestJS, and
+                  FastAPI. Enhancing AI retrieval pipelines with RAG and vector
+                  databases, applying SOLID principles and Agile/Scrum
+                  methodologies.
                 </p>
               </div>
             </div>
 
-            {}
             <div className="timeline-item">
               <div className="timeline-dot"></div>
               <div className="timeline-content">
                 <h4>Real-world Impact</h4>
                 <p>
-                  Continuously learning and refining skills to build
-                  intelligent, scalable systems with real impact in the
-                  industry.
+                  Continuously building intelligent, scalable systems with real
+                  impact — from AI-powered stock platforms to modular LLM
+                  orchestration pipelines.
                 </p>
               </div>
             </div>
           </div>
         </div>
 
-        {}
         <div className="about-cta">
           <h3>Let's Build Something Amazing</h3>
           <a href="#contact" className="cta-button">
-            Get in Touch</a>
+            Get in Touch
+          </a>
         </div>
       </div>
     </section>

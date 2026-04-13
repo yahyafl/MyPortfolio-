@@ -1,6 +1,6 @@
 import "../styles/hero.css";
 import heroImg from "../assets/img2.jpeg";
-import pdf from "../assets/Copy of Yehya Fleifel CV (2).pdf"
+import pdf from "../assets/Yehya Fleifel CV, (1).pdf";
 
 export default function Hero() {
   return (
@@ -18,22 +18,26 @@ export default function Hero() {
 
           <p className="hero-summary">
             Junior Software Engineer with strong skills in backend development,
-            AI, and LLM technologies. Passionate about building intelligent
-            systems and robust, scalable backend architectures.
+            AI, and LLM technologies. Experienced building intelligent systems,
+            RAG pipelines, and scalable full-stack architectures with Next.js,
+            NestJS, FastAPI, and LangChain.
           </p>
 
           <div className="hero-specialization">
             <span className="specialty-tag">
-              <span className="tag-icon">⚙️</span> Laravel & FastAPI
+              <span className="tag-icon">⚙️</span> FastAPI & NestJS
             </span>
             <span className="specialty-tag">
-              <span className="tag-icon">🤖</span> LLM Integration
+              <span className="tag-icon">🤖</span> LLM & AI Agents
             </span>
             <span className="specialty-tag">
               <span className="tag-icon">📊</span> RAG Systems
             </span>
             <span className="specialty-tag">
               <span className="tag-icon">🚀</span> Scalable Backends
+            </span>
+            <span className="specialty-tag">
+              <span className="tag-icon">▲</span> Next.js & React
             </span>
           </div>
 
@@ -54,7 +58,7 @@ export default function Hero() {
 
           <div className="hero-actions">
             <a href="#projects" className="hero-btn btn-primary">
-              View My Projects
+              View My Work
               <svg
                 width="16"
                 height="16"
